@@ -15,9 +15,15 @@ export default function DecorativeBg () {
       return undefined
     }
 
-    const container = canvas.parentElement || document.body
-    let width = container.clientWidth || window.innerWidth
-    let height = container.clientHeight || window.innerHeight
+    const getDimensions = () => {
+      const { clientWidth, clientHeight } = canvas
+      return {
+        width: clientWidth || window.innerWidth,
+        height: clientHeight || window.innerHeight
+      }
+    }
+
+    let { width, height } = getDimensions()
 
     const renderer = new THREE.WebGLRenderer({
       canvas,
@@ -103,15 +109,16 @@ export default function DecorativeBg () {
     animationFrame = requestAnimationFrame(render)
 
     const syncSize = () => {
-      width = container.clientWidth || window.innerWidth
-      height = container.clientHeight || window.innerHeight
+      const size = getDimensions()
+      width = size.width
+      height = size.height
       camera.aspect = width / height
       camera.updateProjectionMatrix()
       renderer.setSize(width, height)
     }
 
     const resizeObserver = new ResizeObserver(syncSize)
-    resizeObserver.observe(container)
+    resizeObserver.observe(canvas)
     window.addEventListener('resize', syncSize)
 
     return () => {
