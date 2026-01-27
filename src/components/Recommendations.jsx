@@ -7,7 +7,7 @@ const Recommendations = () => {
       name: 'Biren Rajdev',
       position: 'Director - Data Science',
       company: 'UnitedHealth Group',
-      text: "Tushar worked as a data scientist in my team during his 1+ year stint with Optum (UHG). During this time, Tushar demonstrated that he is a thorough and detail oriented person. He worked diligently on the 'Enhanced Search'... ",
+      text: "Tushar worked as a data scientist in my team during his 1+ year stint with Optum (UHG). During this time, Tushar demonstrated that he is a thorough and detail oriented person. He worked diligently on the 'Enhanced Search' project... ",
       image: '/tushar-portfolio/recommendations/biren.png',
       linkedinUrl: 'https://www.linkedin.com/in/birenrajdev/'
     },
