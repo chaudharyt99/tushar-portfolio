@@ -1,8 +1,10 @@
 import { useEffect, useRef } from 'react'
 import { createNoise3D } from 'simplex-noise'
+import { useHeroVisibility } from '@/hooks/useHeroVisibility'
 
 export default function DecorativeBg () {
   const canvasRef = useRef(null)
+  const isHeroVisible = useHeroVisibility()
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -15,13 +17,10 @@ export default function DecorativeBg () {
       return undefined
     }
 
-    const getDimensions = () => {
-      const { clientWidth, clientHeight } = canvas
-      return {
-        width: clientWidth || window.innerWidth,
-        height: clientHeight || window.innerHeight
-      }
-    }
+    const getDimensions = () => ({
+      width: window.innerWidth,
+      height: window.innerHeight
+    })
 
     let { width, height } = getDimensions()
 
@@ -139,7 +138,11 @@ export default function DecorativeBg () {
         inset: 0,
         width: '100vw',
         height: '100vh',
-        zIndex: -1
+        backgroundColor: '#0f1617',
+        zIndex: 0,
+        pointerEvents: 'none',
+        filter: isHeroVisible ? 'none' : 'blur(4px)',
+        transition: 'filter 300ms ease'
       }}
     />
   )
