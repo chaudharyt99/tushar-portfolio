@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: 'Accident Detection',
     description: 'An accident detection and emergency reporting service.',
-    image: '/projects/accident-detection.gif',
+    image: '/tushar-portfolio/projects/accident-detection.gif',
     tags: ['PyTorch', 'CV', 'DenseNet'],
     demoUrl:
       'https://github.com/chaudharyt99/smart-accident-detection-reporting#',
@@ -17,7 +17,7 @@ const projects = [
     title: 'Netflix Recommendation',
     description:
       'An Approximate Nearest Neighbors based title recommendation system.',
-    image: '/projects/netflix-title-recommendation.gif',
+    image: '/tushar-portfolio/projects/netflix-title-recommendation.gif',
     tags: ['Annoy', 'NLP', 'Flask'],
     demoUrl: 'https://github.com/chaudharyt99/netflix-movie-recommendation',
     githubUrl: 'https://github.com/chaudharyt99/netflix-movie-recommendation'
@@ -26,7 +26,7 @@ const projects = [
     id: 3,
     title: 'Digits recognition',
     description: 'A from-scratch handwritten MNIST digit recognition tool.',
-    image: '/projects/mnist-digits.gif',
+    image: '/tushar-portfolio/projects/mnist-digits.gif',
     tags: ['Python', 'Numpy', 'Jupyter'],
     demoUrl: 'https://github.com/chaudharyt99/mnist_using_numpy_scratch',
     githubUrl: 'https://github.com/chaudharyt99/mnist_using_numpy_scratch'
