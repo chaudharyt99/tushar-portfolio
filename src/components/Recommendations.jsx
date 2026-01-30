@@ -8,7 +8,7 @@ const Recommendations = () => {
       position: 'Director - Data Science',
       company: 'UnitedHealth Group',
       text: "Tushar worked as a data scientist in my team during his 1+ year stint with Optum (UHG). During this time, Tushar demonstrated that he is a thorough and detail oriented person. He worked diligently on the 'Enhanced Search' project... ",
-      image: '/tushar-portfolio/recommendations/biren.png',
+      image: '/recommendations/biren.png',
       linkedinUrl: 'https://www.linkedin.com/in/birenrajdev/'
     },
     {
@@ -16,7 +16,7 @@ const Recommendations = () => {
       position: 'Manager - Data Science',
       company: 'UnitedHealth Group',
       text: 'Tushar is a great guy, he is a phenomenal analytical mind set person with sound hands on Machine Learning, NLP, Deep Learning. His deep Understanding of conversational data and health care domain helped us to bring great values... ',
-      image: '/tushar-portfolio/recommendations/manoj.png',
+      image: '/recommendations/manoj.png',
       linkedinUrl: 'https://www.linkedin.com/in/manoj-agarwal-a044053b/'
     }
   ]
